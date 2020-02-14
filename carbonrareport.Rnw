@@ -1,0 +1,68 @@
+\documentclass[hidelinks]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage[normalem]{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+
+\title{CARBONRA analyses}
+\author{Koray Ta\c{s}c{\i}lar}
+\begin{document}
+\maketitle
+
+\section*{Read data}
+<<readdata>>=
+library(tidyverse)
+library(haven)
+library(labelled)
+
+original <- read_spss("dataset.sav")
+@
+\section{Outline}
+Pre-RA and RA patients that had COMP measurements before and after an excercise challenge at baseline and 6 months. Meanwhile the physical activity was tracked,  qualitf of life and disease activity were measured
+\begin{itemize}
+  \item COMP kinetics at baseline and disease activity at 6 months. One Pre-RA patient developed RA. COMP was measured at t0, min15, min 30, min60 and min 120.
+ 
+  
+\item Assessing the level of physical activity in everyday life in ACPA-positive individuals with no clinical signs of RA compared to patients with established RA
+
+Comparing IPAQ between established RA and pre-RA patients at each timepoint.
+
+\item	Observe physical activity in both groups of volunteers over a period of 6 months
+
+... and the course over time
+
+\item Find a relationship between physical activity and patient well-being 
+
+Relationships between physical activity measured using wearable data and IPAQ, HAQ and SF-36 pointwise and over time.
+
+\item	(Observing the effect of movement behavior on the course of therapy in RA patients and the "time to flare" in ACPA-positive subject)
+
+Looking at the relationships between IPAQ and ´wearable-measured physical activity and RA disease activity components. i.e Joint counts, patient reported pain and global activity and the acute phase response.
+
+\item	Potential of kinetics in COMP to serve as a biomarker for change in disease activity following a stress test in ACPA-positive subjects compared to patients with established RA
+
+Looking at the components of COMP kinetics and RA disease activity components. And whether future change can be predicted.
+
+\item Analysis of the informative value of COMP as a routine marker compared to sanitized study conditions.
+
+Samples for COMP are obtained after a 30 min. rest in this study which is not similar to the clinical routine. It is not clear whether the routine clinical sample processing conditions affect the COMP values therefore the values from the resting state in this study will be compared to those obtained from RA patients in clinical routine. The baseline COMP values at visit 2 were obtained in routine clinic conditions without a 30 minute rest. Within-person comparisons will be made between tha baseline values of V2 and V1. (Drop time to flare)
+
+\end{itemize}}
+
+\end{document}
